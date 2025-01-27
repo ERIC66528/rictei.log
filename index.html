@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Staff Attendance System</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <header>
+    <h1>Staff Attendance Management</h1>
+  </header>
+
+  <main>
+    <div class="container">
+      <h2>Attendance System</h2>
+      <form id="attendanceForm">
+        <label for="name">Name:</label>
+        <select id="name" required>
+          <option value="" disabled selected>Select your name</option>
+          <optgroup label="Staff">
+            <option value="Staff 1">Staff 1</option>
+            <option value="Staff 2">Staff 2</option>
+            <option value="Staff 3">Staff 3</option>
+            <option value="Staff 4">Staff 4</option>
+            <option value="Staff 5">Staff 5</option>
+          </optgroup>
+          <optgroup label="Attachees">
+            <option value="Attachee 1">Attachee 1</option>
+            <option value="Attachee 2">Attachee 2</option>
+            <option value="Attachee 3">Attachee 3</option>
+            <option value="Attachee 4">Attachee 4</option>
+            <option value="Attachee 5">Attachee 5</option>
+            <option value="Attachee 6">Attachee 6</option>
+            <option value="Attachee 7">Attachee 7</option>
+            <option value="Attachee 8">Attachee 8</option>
+            <option value="Attachee 9">Attachee 9</option>
+            <option value="Attachee 10">Attachee 10</option>
+          </optgroup>
+        </select>
+        <button type="button" id="checkIn">Check In</button>
+        <button type="button" id="checkOut">Check Out</button>
+      </form>
+      <div id="log">
+        <h3>Attendance Log</h3>
+        <ul id="attendanceLog"></ul>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Rictei-softwares</p>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
